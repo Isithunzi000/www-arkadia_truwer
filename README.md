@@ -1,27 +1,31 @@
 # arkadia_truwer
 
-Chrome extension - asystent odgrywania scen dla oficjalnego klienta [arkadia.rpg.pl](https://arkadia.rpg.pl).
-
-## Pobierz
-
-**[arkadia_truwer.zip](https://isithunzi000.github.io/www-arkadia_truwer/arkadia_truwer.zip)**
+Rozszerzenie Chrome: asystent odgrywania scen dla oficjalnego klienta [arkadia.rpg.pl](https://arkadia.rpg.pl).
 
 ## Instalacja
 
-1. Pobierz i rozpakuj `arkadia_truwer.zip`
-2. Chrome: `chrome://extensions/` → tryb dewelopera → załaduj rozpakowany folder
-3. Przejdź na `arkadia.rpg.pl`
+1. Pobierz [arkadia_truwer.zip](https://isithunzi000.github.io/www-arkadia_truwer/arkadia_truwer.zip)
+2. Rozpakuj ZIP — powstanie folder `arkadia_truwer`
+3. Chrome: `chrome://extensions/` → włącz **Tryb deweloperski** → **Wczytaj rozpakowany** → wskaż folder `arkadia_truwer`
+
+## Aktualizacja
+
+Rozszerzenie samo sprawdza dostępność nowej wersji i wyświetla powiadomienie.
+
+1. Pobierz nowy [arkadia_truwer.zip](https://isithunzi000.github.io/www-arkadia_truwer/arkadia_truwer.zip)
+2. Rozpakuj do **tego samego folderu** `arkadia_truwer` (nadpisz pliki)
+3. Chrome: `chrome://extensions/` → kliknij **↺** na rozszerzeniu arkadia_truwer
 
 ## Użycie
 
-```
-/truwer              - otwórz/zamknij (ostatni tryb)
-/truwer float        - tryb pływający / toggle
-/truwer left         - dok lewy / toggle
-/truwer right        - dok prawy / toggle
-/truwer help         - ta pomoc
-/truwer pomoc        - ta pomoc
-```
+| Komenda | Opis |
+|---|---|
+| `/truwer` | Otwórz/zamknij (ostatni tryb) |
+| `/truwer float` | Tryb pływający / toggle |
+| `/truwer left` | Dok lewy / toggle |
+| `/truwer right` | Dok prawy / toggle |
+| `/truwer help` | Pomoc |
+| `/truwer pomoc` | Pomoc |
 
 Truwer pozwala przygotować scenę (listę kroków z komend gry) i odegrać ją we własnym
 tempie, krok po kroku. Tempo ustalasz Ty.
@@ -50,12 +54,7 @@ uśmiechnij się|skin głową
 - Format `.txt`: każda linia to komenda; `/pauza` lub `/pauza N` to pauza; `# tekst` to notatka
 - **JSON / TXT** - eksport pojedynczej sceny lub zbiorczy eksport zaznaczonych scen
 
-### Ważne
+## Ważne
 
 Plugin nigdy nie wysyła komend samodzielnie. Każda wysyłka to świadomy klik.
 To wymóg regulaminu Arkadii.
-
-## Aktualizacja
-
-Po pojawieniu się powiadomienia o nowej wersji: pobierz ZIP, rozpakuj do tego samego
-folderu, odśwież rozszerzenie w Chrome.
