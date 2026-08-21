@@ -9,54 +9,53 @@ Chrome extension - asystent odgrywania scen dla oficjalnego klienta [arkadia.rpg
 ## Instalacja
 
 1. Pobierz i rozpakuj `arkadia_truwer.zip`
-2. Chrome: `chrome://extensions/` → tryb dewelopera → zaladuj rozpakowany folder
-3. Przejdz na `arkadia.rpg.pl`
+2. Chrome: `chrome://extensions/` → tryb dewelopera → załaduj rozpakowany folder
+3. Przejdź na `arkadia.rpg.pl`
 
-## Uzycie
+## Użycie
 
 ```
-/truwer              - otworz/zamknij (ostatni tryb)
-/truwer float        - tryb plywajacy / toggle
+/truwer              - otwórz/zamknij (ostatni tryb)
+/truwer float        - tryb pływający / toggle
 /truwer left         - dok lewy / toggle
 /truwer right        - dok prawy / toggle
 /truwer help         - ta pomoc
 /truwer pomoc        - ta pomoc
 ```
 
-Truwer pozwala przygotowac scene (liste krokow z komend gry) i odegrac ja we wlasnym
-tempie, krok po kroku. Kazda linie wysylasz recznie - plugin nigdy nie wysyla nic sam.
-Tempo ustalasz Ty.
+Truwer pozwala przygotować scenę (listę kroków z komend gry) i odegrać ją we własnym
+tempie, krok po kroku. Tempo ustalasz Ty.
 
-### Rodzaje krokow
+### Rodzaje kroków
 
 ```
-Komenda  - zwykla komenda gry (np. usmiechnij sie, powiedz ...).
-Pauza    - przerwa z odliczaniem, jako podpowiedz tempa. Sama nic nie wysyla.
-Notatka  - tekst tylko dla Ciebie. Nigdy nie jest wysylana; prompter ja pomija.
+Komenda  - zwykła komenda gry (np. uśmiechnij się, powiedz ...).
+Pauza    - przerwa z odliczaniem, jako podpowiedź tempa. Sama nic nie wysyła.
+Notatka  - tekst tylko dla Ciebie. Nigdy nie jest wysyłana; prompter ją pomija.
 ```
 
 ### Warianty komendy (znak |)
 
-W jednej komendzie mozesz podac kilka wersji oddzielonych znakiem `|`. Przy odgrywaniu
-prompter wylosuje jedna z nich.
+W jednej komendzie możesz podać kilka wersji oddzielonych znakiem `|`. Przy odgrywaniu
+prompter wylosuje jedną z nich.
 
 ```
-usmiechnij sie|skin glowa
+uśmiechnij się|skin głową
 ```
 
 ### Import / eksport
 
-- **Importuj plik** - wczytaj scene z `.txt` (lista komend) lub `.json` (pelna scena lub pakiet)
-- **Importuj tekst** - wklej zawartosc bezposrednio
-- Format `.txt`: kazda linia to komenda; `/pauza` lub `/pauza N` to pauza; `# tekst` to notatka
+- **Importuj plik** - wczytaj scenę z `.txt` (lista komend) lub `.json` (pełna scena lub pakiet)
+- **Importuj tekst** - wklej zawartość bezpośrednio
+- Format `.txt`: każda linia to komenda; `/pauza` lub `/pauza N` to pauza; `# tekst` to notatka
 - **JSON / TXT** - eksport pojedynczej sceny lub zbiorczy eksport zaznaczonych scen
 
-### Wazne
+### Ważne
 
-Plugin nigdy nie wysyla komend samodzielnie. Kazda wysylka to swiadomy klik.
-To wymog regulaminu Arkadii.
+Plugin nigdy nie wysyła komend samodzielnie. Każda wysyłka to świadomy klik.
+To wymóg regulaminu Arkadii.
 
 ## Aktualizacja
 
-Po pojawieniu sie powiadomienia o nowej wersji: pobierz ZIP, rozpakuj do tego samego
-folderu, odswiez rozszerzenie w Chrome.
+Po pojawieniu się powiadomienia o nowej wersji: pobierz ZIP, rozpakuj do tego samego
+folderu, odśwież rozszerzenie w Chrome.
