@@ -58,3 +58,9 @@ uśmiechnij się|skin głową
 
 Plugin nigdy nie wysyła komend samodzielnie. Każda wysyłka to świadomy klik.
 To wymóg regulaminu Arkadii.
+
+## Dla maintainera
+
+Źródła leżą w `src/arkadia_truwer/` (`truwer.js` + `manifest.json`) — są bajtowo identyczne z zawartością najnowszego zipa w `releases/` (pilnuje tego test `src-spojnosc` w repo arkadia-dargoth-testy).
+
+Nowa wersja: edytuj źródła w `src/arkadia_truwer/`, potem `python3 scripts/make_release_zip.py src X.Y.Z` → **jeden commit** ze zmianą w `src/` i nowym zipem w `releases/` → push. Workflow Pages odpala się wyłącznie przy zmianie `releases/*.zip` (commity dotykające tylko `src/` nie odpalają builda). Build jest deterministyczny: te same źródła = identyczny SHA-256 zipa.

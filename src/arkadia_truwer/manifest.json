@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "arkadia_truwer",
+  "version": "1.0.10",
+  "description": "Asystent odgrywania scen dla oficjalnego klienta arkadia.rpg.pl",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://arkadia.rpg.pl/*"
+      ],
+      "js": [
+        "truwer.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://arkadia.rpg.pl/*",
+    "https://isithunzi000.github.io/*"
+  ]
+}
